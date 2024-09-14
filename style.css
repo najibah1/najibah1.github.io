@@ -1,5 +1,6 @@
-body{
-    font-family: helvetica,Arial, sans-serif;
+/* Existing styles for body, header, etc. */
+body {
+    font-family: helvetica, Arial, sans-serif;
     margin: 0px;
     font-size: 1.5vw;
 }
@@ -7,26 +8,25 @@ body{
 #logo {
     margin: 0px;
     padding: 8px;
-    font-family:"Fredoka One", sans-serif;
+    font-family: "Fredoka One", sans-serif;
     color: white;
-    box-shadow:8px 8px 10px 3px darkorange ;
+    box-shadow: 8px 8px 10px 3px rgb(7, 98, 26);
     width: 16%;
-    
 }
 
-ul{
+ul {
     margin: 0px;
 }
 
 body > header {
-    background-color: orange;
+    background-color: rgb(12, 119, 53);
     display: flex;
     height: 12vh;
     align-items: center;
     justify-content: space-around;
 }
 
-#nav-ul{
+#nav-ul {
     display: flex;
 }
 
@@ -35,17 +35,17 @@ body > header {
     margin: 16px;
 }
 
-body> header > nav > ul {
+body > header > nav > ul {
     list-style: none;
     text-decoration: none;
 }
 
-.navbutton{
+.navbutton {
     color: white;
     text-decoration: none;
     padding: 12px;
-    border:1px solid white ;
-    border-radius: 10%;
+    border: 1px solid white;
+    border-radius: 20%;
 }
 
 body > main article {
@@ -53,43 +53,51 @@ body > main article {
     margin: auto;
 }
 
-#main-content{
-    display: flex;
-    justify-content: space-around;
-
+/* Grid layout for the main content area */
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between the grid items */
+    justify-content: center;
+    padding: 20px;
 }
 
 #main-content > div {
-    width:80%
+    background-color: #f2f2f2;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
-
-
+/* Form and footer styling */
 form {
-    text-align:center ;
+    text-align: center;
 }
 
 h2 {
-    text-align:center ;
+    text-align: center;
 }
-body > footer{
-    background-color: orange;
+
+body > footer {
+    background-color: rgb(11, 134, 23);
     display: flex;
 }
 
-img{
-    border-radius: 50%
+img {
+    border-radius: 10px;
 }
 
-#footer-ul{
+#footer-ul {
     display: flex;
     list-style: none;
 }
 
 #footer-ul > div > li {
-    margin-left:12px ;
+    margin-left: 12px;
 }
-#footer-ul > div > li > a{
+
+#footer-ul > div > li > a {
     text-decoration: none;
-    color: white; 
+    color: white;
 }
